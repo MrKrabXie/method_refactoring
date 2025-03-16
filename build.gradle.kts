@@ -11,6 +11,7 @@ plugins {
     alias(libs.plugins.kover) // Gradle Kover Plugin
 }
 
+
 group = providers.gradleProperty("pluginGroup").get()
 version = providers.gradleProperty("pluginVersion").get()
 

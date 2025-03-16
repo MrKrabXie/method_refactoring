@@ -5,12 +5,16 @@
     <vendor>mrkrabxie</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java-capable</depends>
+    <depends>com.intellij.modules.all</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow factoryClass="com.github.mrkrabxie.methodrefactoring.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
     </extensions>
+
+
 
     <applicationListeners>
         <listener class="com.github.mrkrabxie.methodrefactoring.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
